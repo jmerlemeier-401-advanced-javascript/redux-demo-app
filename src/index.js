@@ -7,18 +7,19 @@ import './style.scss';
 import App from './components/app';
 import createStore from './store';
 
-
 const store = createStore();
 
-
 class Main extends React.Component {
-  render () {
+  render() {
     return (
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <>
+        <Provider store={store}>
+            <App />
+        </Provider>
+      </>
     )
   }
 }
+
 const rootElement = document.getElementById('root');
-ReactDOM.render(<Main />, rootElement);
+React.DOM.render(<Main />, rootElement);
