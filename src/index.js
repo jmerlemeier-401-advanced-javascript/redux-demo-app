@@ -6,6 +6,7 @@ import './style.scss';
 
 import App from './components/app';
 import createStore from './store';
+
 const store = createStore();
 
 class Main extends React.Component {

@@ -6,3 +6,5 @@ import peopleReducer from './person.store';
 let reducers = combineReducers({
   people: peopleReducer,
 })
+
+export default () => createStore(reducers);
